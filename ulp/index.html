@@ -91,14 +91,20 @@ body{font-family:var(--font-texte);-webkit-font-smoothing:antialiased}
 @media (min-width:801px) and (max-width:1050px){
  .cta-layout{gap:30px;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr)}
  .wrap{padding-left:34px;padding-right:34px}
- .cta-intro .portrait{width:265px;height:265px;object-fit:cover}
+ .cta-intro .portrait{height:265px}
 }
 @media(max-width:800px){
  .cta-layout{display:flex;flex-direction:column;gap:26px}
- .cta-intro .portrait{width:220px;height:220px;object-fit:cover;margin-bottom:20px}
+ .cta-intro .portrait{width:220px;height:230px;object-fit:cover;margin-bottom:20px}
  .cta-calendar,.cta-intro{width:100%}
  .cta-calendar .booking{margin-top:0}
 }
+
+/* Correction ciblée : typographie du titre V11 et portrait carré */
+.hero h1{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-weight:500;letter-spacing:.008em}
+.cta-intro .portrait{width:100%;height:auto;aspect-ratio:1 / 1;max-height:none;object-fit:cover;object-position:center 35%}
+@media (min-width:801px) and (max-width:1050px){.cta-intro .portrait{height:auto;aspect-ratio:1 / 1}}
+@media (max-width:800px){.cta-intro .portrait{width:220px;height:220px;aspect-ratio:1 / 1}}
 </style></head><body>
 <section class="hero black"><div class="wrap reveal"><h1>ULTIMATE LEADERSHIP PROGRAM</h1><p>L'accompagnement premium conçu pour les CEOs et fondateurs exigeants. Vous êtes votre premier levier de performance - exploitons-le pleinement.</p><a class="button" href="#rendez-vous">Réserver mon RDV offert</a></div></section>
 <section class="section charcoal"><div class="wrap reveal"><h2>Votre succès repose sur vous</h2><p class="lead">En tant que CEO ou fondateur, vous êtes au cœur de tout : stratégie, décisions, performance de l'équipe. Mais sans énergie, clarté et alignement, même les meilleurs plans échouent.</p><p class="lead strong">Ce programme sur mesure vous donne les outils pour transformer votre énergie, affûter votre vision et décupler votre impact.</p></div></section>
