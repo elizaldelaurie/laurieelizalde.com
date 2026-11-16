@@ -99,6 +99,23 @@ body{font-family:var(--font-texte);-webkit-font-smoothing:antialiased}
  .cta-calendar,.cta-intro{width:100%}
  .cta-calendar .booking{margin-top:0}
 }
+
+/* V14 - alignement et typographie de reference Gamma, ordinateur uniquement */
+@media (min-width:801px) {
+  .wrap {max-width:1152px; padding-left:24px; padding-right:24px; width:100%; margin-left:auto; margin-right:auto;}
+  .section {padding:76px 0; min-height:unset;}
+  .hero {min-height:420px; padding:76px 0; align-items:center;}
+  .hero h1 {font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:clamp(32px,3vw,43px); font-weight:500; letter-spacing:.015em; line-height:1.25; margin-bottom:26px; max-width:100%;}
+  .section h2 {font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:clamp(30px,2.8vw,40px); font-weight:500; letter-spacing:.015em; line-height:1.28; margin-bottom:36px;}
+  .hero p, .charcoal p.lead, .charcoal p.lead.strong {font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; font-size:19px; font-weight:400; line-height:1.7; letter-spacing:0; color:#e7e5ed; text-shadow:none; max-width:1104px;}
+  .charcoal p.lead.strong, .charcoal .strong {font-weight:400;}
+  .hero p {max-width:1104px; margin-bottom:24px;}
+  .charcoal .wrap {max-width:1152px;}
+  .charcoal h2 {font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-weight:500; letter-spacing:.015em;}
+  .charcoal p.lead {margin-bottom:28px;}
+  .charcoal p.lead:last-child {margin-bottom:0;}
+  .button {margin-top:18px;}
+}
 </style></head><body>
 <section class="hero black"><div class="wrap reveal"><h1>ULTIMATE LEADERSHIP PROGRAM</h1><p>L'accompagnement premium conçu pour les CEOs et fondateurs exigeants. Vous êtes votre premier levier de performance - exploitons-le pleinement.</p><a class="button" href="#rendez-vous">Réserver mon RDV offert</a></div></section>
 <section class="section charcoal"><div class="wrap reveal"><h2>Votre succès repose sur vous</h2><p class="lead">En tant que CEO ou fondateur, vous êtes au cœur de tout : stratégie, décisions, performance de l'équipe. Mais sans énergie, clarté et alignement, même les meilleurs plans échouent.</p><p class="lead strong">Ce programme sur mesure vous donne les outils pour transformer votre énergie, affûter votre vision et décupler votre impact.</p></div></section>
